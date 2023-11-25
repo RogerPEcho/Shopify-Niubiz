@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "niubiz-payment-2511"
+client_id = "ad714868c20d2b4e39b3f20d965de78a"
+application_url = "https://embassy-diabetes-terminology-cayman.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://embassy-diabetes-terminology-cayman.trycloudflare.com/auth/callback",
+  "https://embassy-diabetes-terminology-cayman.trycloudflare.com/auth/shopify/callback",
+  "https://embassy-diabetes-terminology-cayman.trycloudflare.com/api/auth/callback",
+  "https://embassy-diabetes-terminology-cayman.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "niubiztest.myshopify.com"
